@@ -1,0 +1,82 @@
+<!DOCTYPE UI><UI>
+<class>HelloBaseForm</class>
+<widget>
+    <class>QWidget</class>
+    <property stdset="1">
+        <name>name</name>
+        <cstring>HelloBaseForm</cstring>
+    </property>
+    <property stdset="1">
+        <name>geometry</name>
+        <rect>
+            <x>17</x>
+            <y>14</y>
+            <width>240</width>
+            <height>320</height>
+        </rect>
+    </property>
+    <property stdset="1">
+        <name>maximumSize</name>
+        <size>
+            <width>480</width>
+            <height>272</height>
+        </size>
+    </property>
+    <property stdset="1">
+        <name>caption</name>
+        <string>cole3 camara</string>
+    </property>
+    <property stdset="1">
+        <name>backgroundOrigin</name>
+        <enum>WidgetOrigin</enum>
+    </property>
+    <widget>
+        <class>QLayoutWidget</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>Layout1</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>25</x>
+                <y>255</y>
+                <width>187</width>
+                <height>34</height>
+            </rect>
+        </property>
+        <hbox>
+            <property stdset="1">
+                <name>margin</name>
+                <number>0</number>
+            </property>
+            <property stdset="1">
+                <name>spacing</name>
+                <number>6</number>
+            </property>
+            <widget>
+                <class>QPushButton</class>
+                <property stdset="1">
+                    <name>name</name>
+                    <cstring>SnapButton</cstring>
+                </property>
+                <property stdset="1">
+                    <name>text</name>
+                    <string>snap</string>
+                </property>
+            </widget>
+            <widget>
+                <class>QPushButton</class>
+                <property stdset="1">
+                    <name>name</name>
+                    <cstring>CloseButton</cstring>
+                </property>
+                <property stdset="1">
+                    <name>text</name>
+                    <string>close</string>
+                </property>
+            </widget>
+        </hbox>
+    </widget>
+</widget>
+</UI>

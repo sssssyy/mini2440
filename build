@@ -1,0 +1,7 @@
+#!/bin/bash
+
+source /home/shaoyang/mini2440/arm-qtopia/qtopia-2.2.0-FriendlyARM/setQpeEnv 
+qmake -spec /home/shaoyang/mini2440/arm-qtopia/qtopia-2.2.0-FriendlyARM/qtopia/mkspecs/qws/linux-arm-g++ -o Makefile *.pro 
+
+make clean
+make 
