@@ -24,8 +24,8 @@
 
 
 
-#define WIDTH 160
-#define HEIGHT 120 
+#define WIDTH 320
+#define HEIGHT 270 
 #define FRAME_COUNT 1 //�建�����
 #define FRAME_IDLE 60
 
@@ -110,7 +110,7 @@ static int v4l2_set_memory(void)
   
   // 灏哻amara鍐呭瓨鏄犲皠鍒扮敤鎴风┖闂�  
   buffers = (VideoBuffer *)calloc(req.count, sizeof(*buffers));
-  
+
   for (numBufs = 0; numBufs < req.count; numBufs++) 
   {
     memset(&buf, 0, sizeof(buf));
@@ -226,7 +226,7 @@ void MyHelloForm::showMe()
     return;
   image.loadFromData((uchar *)buffers[0].start, buffers[0].length, "JPEG");
   
-  painter.drawImage(40, 30, image, 0, 0, WIDTH, HEIGHT);
+  painter.drawImage(0, 0, image, 0, 0, WIDTH, HEIGHT);
 
 }
 

@@ -9,11 +9,18 @@
     <property stdset="1">
         <name>geometry</name>
         <rect>
-            <x>17</x>
-            <y>14</y>
-            <width>240</width>
-            <height>320</height>
+            <x>5</x>
+            <y>0</y>
+            <width>480</width>
+            <height>272</height>
         </rect>
+    </property>
+    <property stdset="1">
+        <name>minimumSize</name>
+        <size>
+            <width>480</width>
+            <height>272</height>
+        </size>
     </property>
     <property stdset="1">
         <name>maximumSize</name>
@@ -34,18 +41,18 @@
         <class>QLayoutWidget</class>
         <property stdset="1">
             <name>name</name>
-            <cstring>Layout1</cstring>
+            <cstring>Layout2</cstring>
         </property>
         <property stdset="1">
             <name>geometry</name>
             <rect>
-                <x>25</x>
-                <y>255</y>
-                <width>187</width>
-                <height>34</height>
+                <x>370</x>
+                <y>20</y>
+                <width>90</width>
+                <height>68</height>
             </rect>
         </property>
-        <hbox>
+        <grid>
             <property stdset="1">
                 <name>margin</name>
                 <number>0</number>
@@ -54,7 +61,7 @@
                 <name>spacing</name>
                 <number>6</number>
             </property>
-            <widget>
+            <widget row="0"  column="0" >
                 <class>QPushButton</class>
                 <property stdset="1">
                     <name>name</name>
@@ -65,7 +72,7 @@
                     <string>snap</string>
                 </property>
             </widget>
-            <widget>
+            <widget row="1"  column="0" >
                 <class>QPushButton</class>
                 <property stdset="1">
                     <name>name</name>
@@ -76,7 +83,7 @@
                     <string>close</string>
                 </property>
             </widget>
-        </hbox>
+        </grid>
     </widget>
 </widget>
 </UI>
